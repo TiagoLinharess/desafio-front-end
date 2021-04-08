@@ -15,7 +15,6 @@ import {
   IoMenuOutline,
   IoPersonCircleOutline,
   IoEllipsisVerticalSharp,
-  IoChevronForwardOutline
 } from 'react-icons/io5'
 import {
   Container,
