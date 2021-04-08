@@ -297,7 +297,7 @@ export const Chat = () => {
                           value={values.idState}
                           placeholder="Estado"
                         >
-                          <option value="">Selecione</option>
+                          <option value="">Estado</option>
                           {states.map(state => (
                             <option key={state.id} value={Number(state.id)}>
                               {`${state.sigla} - ${state.nome}`}
@@ -318,7 +318,7 @@ export const Chat = () => {
                           placeholder="Cidade"
                           disabled={cityLoading}
                         >
-                          <option value="">{cityLoading ? 'Carregando...' : 'Selecione'}</option>
+                          <option value="">{cityLoading ? 'Carregando...' : 'Cidade'}</option>
                           {cities.map(city => (
                             <option key={city.id} value={Number(city.id)}>
                               {city.nome}

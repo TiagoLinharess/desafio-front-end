@@ -8,9 +8,15 @@ export const Container = styled.main`
 
   background: var(--background);
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1120px) {
     margin: 0 auto;
     box-shadow: none;
+  }
+
+  @media (max-height: 924px) {
+    margin: 0 auto;
+    box-shadow: none;
+    max-width: 100vw;
   }
 `;
 
@@ -46,8 +52,13 @@ export const Content = styled.section`
     flex-direction: column;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1120px) {
     height: auto;
+  }
+
+  @media (max-height: 924px) {
+    height: auto;
+    max-width: none;
   }
 `;
 
@@ -154,7 +165,7 @@ export const BubbleOutcome = styled.div<ErrorProps>`
     div.select {
       margin-bottom: auto;
       p {
-        padding: 0; 
+        padding: 0 1rem 0 0; 
         color: var(--red);
 
         font-size: 0.8rem;
